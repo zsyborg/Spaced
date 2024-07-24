@@ -17,7 +17,7 @@ module.exports = {
         new DefinePlugin({
             DEV_BUILD: JSON.stringify(true)
         }),
-        new HtmlWebpackPlugin({ title: "Space Pirates made with Babylon.js" })
+        new HtmlWebpackPlugin({ title: "Blastar40 - A Space Adventure" })
     ],
     module: {
         rules: [

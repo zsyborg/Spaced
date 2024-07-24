@@ -36,7 +36,7 @@ export class Main extends State {
             GuiFramework.formatButtonGrid(grid);
             grid.addControl(panel, 0, 0);
 
-            let logo = new Image("spacePirates", "assets/UI/spacePiratesLogo.svg");
+            let logo = new Image("spacePirates", "assets/UI/logo.png");
             logo.width = 0.7;
             logo.fixedRatio = 340 / 1040;
             logo.verticalAlignment = Control.VERTICAL_ALIGNMENT_TOP
@@ -81,16 +81,16 @@ export class Main extends State {
                 State.setCurrent(States.options);
             });
 
-            GuiFramework.addButton("Credits", panel).onPointerDownObservable.add(function(info) {
-                State.setCurrent(States.credits);
-            });
+            // GuiFramework.addButton("Credits", panel).onPointerDownObservable.add(function(info) {
+            //     State.setCurrent(States.credits);
+            // });
             this._adt.addControl(grid);
         } else {
             var panel = new StackPanel();
             panel.verticalAlignment = Control.VERTICAL_ALIGNMENT_BOTTOM;
             panel.paddingBottom = "100px";
 
-            let logo = new Image("spacePirates", "assets/UI/spacePiratesLogo.svg");
+            let logo = new Image("spacePirates", "assets/UI/logo.png");
             logo.width = 0.8;
             logo.fixedRatio = 340 / 1040;
             logo.verticalAlignment = Control.VERTICAL_ALIGNMENT_TOP
@@ -135,9 +135,9 @@ export class Main extends State {
                 State.setCurrent(States.options);
             });
 
-            GuiFramework.addButton("Credits", panel).onPointerDownObservable.add(function(info) {
-                State.setCurrent(States.credits);
-            });
+            // GuiFramework.addButton("Credits", panel).onPointerDownObservable.add(function(info) {
+            //     State.setCurrent(States.credits);
+            // });
             this._adt.addControl(panel);
         }
 
